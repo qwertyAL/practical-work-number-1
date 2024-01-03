@@ -32,3 +32,19 @@ Git:
  - if at least something in the source data changes (at least one character), then the hash will also change (and significantly).
    
 Git stores a table of *hash → commit* information correspondences. If you know the hash, you can find out everything else: the author and commit date and the contents of the committed files. We can say that the hash is the main commit identifier.
+
+---
+
+## Log
+After calling *git log*, a list of commits appears.   
+
+Elements of log:
+ - a string of numbers and Latin letters after the word commit is the commit hash
+ - Author — author’s name and email
+ - Date — date and time when the commit was created
+ - at the end there is a commit message
+   
+
+Get a shortened log - *git log --oneline*   
+
+You can get an abbreviated log using the git log command with the --oneline flag. Only the first few characters of each commit hash and their comments will appear in the terminal.
